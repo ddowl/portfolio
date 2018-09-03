@@ -79,10 +79,6 @@ section {
   font-family: 'Raleway-semibold';
 }
 
-.header {
-  /* margin-top: 20px; */
-}
-
 .header-title {
   font-family: 'raleway-bold';
   color: #444649;
@@ -107,11 +103,14 @@ footer {
 
 .icon-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
-  align-items: center;
-  justify-items: center;
+}
+
+i {
   color: white;
+  text-shadow: 1px 1px 1px #ccc;
+  font-size: 5em;
 }
 
 .footnote {
@@ -137,22 +136,15 @@ footer {
   color: #d9480f;
 }
 
-* {box-sizing: border-box;}
-
 .top-grid {
   display: grid;
-  /* justify-items: center; */
-  /* border: 2px solid #f76707;
-  border-radius: 5px; */
   background-color: #fff4e6;
 }
 
-.top-grid > section {
+/* .top-grid > section {
   border: 2px solid #ffa94d;
   border-radius: 5px;
-  /* background-color: #ffd8a8; */
-  /* color: #d9480f; */
-}
+} */
 
 
 @font-face {
