@@ -1,21 +1,23 @@
 <head>
+  <meta charset="utf-8"/>
   <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 
 <body class="top-grid">
   <section id="title">
-    <div class="text">
-      <h1>Hello there 👋</h1>
-      My name is <span class="highlight">Drew Dowling</span>
+    <div class="header-text">
+      <h1 style="margin-bottom: 8vw; font-size: 8vw;">Hello there 👋</h1>
+      <div>My name is <span class="highlight">Drew Dowling</span></div>
       <br />
-      I'm a software engineer and lifelong learner
+      <div>I'm a software engineer and lifelong learner</div>
     </div>
   </section>
-  <section id="about">
+  <section id="about" class="text-color text-size">
     <div class="header">
       <div class="header-title">ABOUT</div>
-      <div class="header-bar"></div>
+      <!-- <div class="header-bar"></div> -->
     </div>
     <p>
         I'm a full-stack software engineer at <a href="https://www.meraki.cisco.com">Cisco Meraki</a> in San Francisco, CA.
@@ -28,7 +30,7 @@
     <div class="header-bar"></div>
     My skill tree
   </section> -->
-  <section id="projects">
+  <!-- <section id="projects">
     <div class="header">
       <div class="header-title">PROJECTS</div>
       <div class="header-bar"></div>
@@ -40,8 +42,8 @@
       <div>Project 4</div>
       <div>Project 5</div>
     </div>
-  </section>
-  <section id="interests">
+  </section> -->
+  <!-- <section id="interests">
     <div class="header">
       <div class="header-title">INTERESTS</div>
       <div class="header-bar"></div>
@@ -75,29 +77,32 @@
       <div>Running thing 4</div>
       <div>Running thing 5</div>
     </div>
-  </section>
-  <section id="contact">
+  </section> -->
+  <section id="contact" class="text-size">
     <div class="header">
-      <div class="header-title">CONTACT</div>
-      <div class="header-bar"></div>
+      <div class="header-title contact-color">CONTACT</div>
+      <!-- <div class="header-bar contact-bar"></div> -->
     </div>
     Want to get in touch?
-    <form id="contact-form">
-      <input placeholder="Name" type="text" name="name" required="">
-      <input placeholder="Enter email" type="email" name="email" required="">
-      <textarea placeholder="Your Message" type="text" name="message"></textarea>
-      <!-- <div id="success">
-        <div>Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span></div>
-      </div> -->
-      <input class="button" type="submit" id="submit" value="SUBMIT">
+    <form id="contact-form" style="margin-top: calc(30px + 1vw);">
+      <div class="form-group">
+        <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
     </form>
   </section>
-  <footer>
+  <footer class="text-color">
     <div class="icon-links">
-      <a href="https://github.com/ddowl"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/ddowl"><i class="fab fa-github-square"></i></a>
+      <a href="www.linkedin.com/in/ddowl"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/ddowl"><i class="fab fa-github"></i></a>
       <a href="https://gitlab.com/ddowl"><i class="fab fa-gitlab"></i></a>
     </div>
-    <div class="footnote">DREW DOWLING <span class="highlight">©2018</span></div>
+    <div class="footnote  text-size">DREW DOWLING <span class="highlight">©2018</span></div>
   </footer>
 </body>

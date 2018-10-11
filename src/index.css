@@ -7,9 +7,9 @@ body {
 #title {
   align-items: center;
   justify-items: center;
-  height: 100vh;
   background-color: rgba(12, 3, 31, 0.849);
   color: white;
+  padding: 40vh 0 40vh 0;
 }
 
 #about {
@@ -27,7 +27,7 @@ body {
 #contact {
   /* background-color: rgb(253, 223, 253); */
   background: #252934;
-  padding-top: 175px;
+  /* padding-top: 175px; */
   color: white;
 }
 
@@ -46,9 +46,10 @@ section:nth-of-type(5) .header-bar {
 section {
   display: grid;
   padding: 70px 0 70px 0;
-  color: #616161;
-  line-height: 11pt;
+
 }
+
+
 
 .display-items {
   display: grid;
@@ -68,10 +69,19 @@ section {
   margin:auto;
 }
 
-.text {
-  font-size: 32pt;
-  line-height: 36pt;
+.header-text {
+  font-size: 4vw;
+  line-height: 3vw;
   margin: 0 0 20px 0;
+}
+
+.text-color {
+  color: #616161;
+}
+
+.text-size {
+  /* constant when small, grow when larger*/
+  font-size: calc(1vw + 8px);
 }
 
 .highlight {
@@ -82,17 +92,25 @@ section {
 .header-title {
   font-family: 'raleway-bold';
   color: #444649;
-  font-size: 35pt;
-  margin-bottom: 0;
+  font-size: 6vw;
+  margin-bottom: 10vw;
+}
+
+.contact-color {
+  color: white;
 }
 
 .header-bar {
-  margin: 15px 0 75px 0;
+  margin: 30px 0 75px 0;
   width: 70px;
   height: 4px;
   background: #444649;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact-bar {
+  background: white;
 }
 
 footer {
