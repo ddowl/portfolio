@@ -44,9 +44,7 @@ section:nth-of-type(5) .header-bar {
 }
 
 section {
-  display: grid;
   padding: 70px 0 70px 0;
-
 }
 
 /* .display-items {
@@ -72,8 +70,6 @@ section {
 .text-color {
   color: #616161;
 }
-
-
 
 .highlight {
   color: #E31B6D;
@@ -146,6 +142,30 @@ i {
 .top-grid {
   display: grid;
   background-color: #fff4e6;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-rows: 80px 50px 100px 100px auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "header header  header"
+  "body   body    body"
+  ".      form    ."
+  ".      .       .";
+  grid-gap: 15px;
+}
+
+.header-area {
+  grid-area: header;
+}
+
+.body-area {
+  grid-area: body;
+}
+
+.form-area {
+  grid-area: form;
 }
 
 /* .top-grid > section {
