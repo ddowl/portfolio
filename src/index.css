@@ -31,7 +31,7 @@ body {
   color: white;
 }
 
-section:nth-of-type(5) .header-title {
+section:nth-of-type(5) .section-title {
   color: #fff;
 }
 
@@ -49,12 +49,8 @@ section {
 
 }
 
-
-
-.display-items {
+/* .display-items {
   display: grid;
-  /* align-items: center;
-  justify-items: center; */
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 10px;
   width: 100vw;
@@ -67,11 +63,9 @@ section {
 .fit-logo {
   max-width:100%;
   margin:auto;
-}
+} */
 
 .header-text {
-  font-size: 4vw;
-  line-height: 3vw;
   margin: 0 0 20px 0;
 }
 
@@ -79,21 +73,16 @@ section {
   color: #616161;
 }
 
-.text-size {
-  /* constant when small, grow when larger*/
-  font-size: calc(1vw + 8px);
-}
+
 
 .highlight {
   color: #E31B6D;
   font-family: 'Raleway-semibold';
 }
 
-.header-title {
+.section-title {
   font-family: 'raleway-bold';
   color: #444649;
-  font-size: 6vw;
-  margin-bottom: 10vw;
 }
 
 .contact-color {
@@ -174,3 +163,133 @@ i {
 @font-face {
   font-family: 'Raleway-bold';
   src: url("http://findmatthew.com/style/../fonts/Raleway-Bold.ttf"); }
+
+/* phones */
+@media (max-width: 599px) {
+  .title-size {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .header-text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    margin-bottom: 40px;
+  }
+
+  .text-size {
+    font-size: 11px;
+  }
+
+  .icon-links {
+    font-size: 12px;
+  }
+}
+
+/* small tablets */
+@media (min-width: 600px) {
+  .title-size {
+    font-size: 50px;
+    margin-bottom: 70px;
+  }
+
+  .header-text {
+    font-size: 30px;
+    line-height: 25px;
+  }
+
+  .section-title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  .text-size {
+    font-size: 15px;
+  }
+
+  .icon-links {
+    font-size: 15px;
+  }
+}
+
+/* big tablets */
+@media (min-width: 900px) {
+  .title-size {
+    font-size: 70px;
+    margin-bottom: 100px;
+  }
+
+  .header-text {
+    font-size: 40px;
+    line-height: 30px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .text-size {
+    font-size: 18px;
+  }
+
+  .icon-links {
+    font-size: 18px;
+  }
+}
+
+/* laptops */
+@media (min-width: 1200px) {
+  .title-size {
+    font-size: 90px;
+    margin-bottom: 120px;
+  }
+
+  .header-text {
+    font-size: 50px;
+    line-height: 35px;
+  }
+
+  .section-title {
+    font-size: 50px;
+    margin-bottom: 35px;
+  }
+
+  .text-size {
+    font-size: 22px;
+  }
+
+  .icon-links {
+    font-size: 22px;
+  }
+}
+
+/* big ass screens */
+@media (min-width: 1800px) {
+  .title-size {
+    font-size: 110px;
+    margin-bottom: 150px;
+  }
+
+  .header-text {
+    font-size: 60px;
+    line-height: 40px;
+  }
+
+  .section-title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .text-size {
+    font-size: 28px;
+  }
+
+  .icon-links {
+    font-size: 28px;
+  }
+}
